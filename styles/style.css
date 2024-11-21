@@ -15,9 +15,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
+		--color-main:black;
+	  }
 
 
 

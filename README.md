@@ -56,7 +56,14 @@ https://www.thenorthface.nl/nl-nl
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  - De site gebruikt geen semantische HTML
+  - De site heeft geen h1 element
+  - Geen alt-description
+  - Video kan niet op pauze
+  - Video heeft geen captions
+  - Links zijn niet "recognizable" als links (geen streepjes)(waarschijnlijk voor uiterlijk doelen gedaan)
+  - Maakt geen gebruik van focus states
+  - Geen dark of light mode
 </details>
 
 
@@ -88,25 +95,28 @@ https://www.thenorthface.nl/nl-nl
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Het maken van de HTML ging eigenlijk 
+  Het maken van de HTML ging eigenlijk best soepel en zonder problemen. Ik ben nog niet echt begonnen met de css maar die komt nog wel
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Mohammed       | Sander             | Esmee        | Tom              |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | -------------  | images, image sprites| Menu, footer | navigatie, foto's|
+  | -------------- | content weghalen | video's      | animatie/gif     |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Alle images en video's kan je kopieren via ctrl + i en dan media
+  - Article verdanderen in sections
+  - De alt-tekst heeft een betere beschrijving nodig
+  - Headers moeten bovenaan in de parent staan
+  - Alle li items moeten ook nog a's worden in de footer
+  - Alle / veranderen in ./
+  - Het gifje/animatie is eigenlijk een video
 
 </details>
 
@@ -121,16 +131,16 @@ https://www.thenorthface.nl/nl-nl
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Met de CSS ging het niet heel erg soepel en in dit deel van coderen voel ik me nog niet het sterkst. Ik probeer kennis van de oefeningen over te brengen voor in mijn website en dat lukt wel. Langzaam begint de site toch beetje bij beetje iets wat lijkt op de site. Tijdens de feedback heb ik dus niks kunnen laten zien van mijn site door het weinig css afhebben voor het feedbackmoment.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Mohammed       | Sander             | Esmee        | Tom              |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | @media         | Svg                |  eerste slider| Svg             |
+  | individueel-   | Grid               | ⁠slider positie |                |
+  | responsive     | ...                | ⁠video’s / form | ...            |
 
 
   ### Verslag van meeting

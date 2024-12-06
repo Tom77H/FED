@@ -8,120 +8,108 @@
 
 	<title>The North Face</title>
 
-	<link href="styles/style.css" rel="stylesheet">
+	<link href="./styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="./images/The-North-Face-Logo-Geen-Naam.png">
 </head>
 
 <body>
 	<header>
-		<h1>TheNorthFace</h1>
+		<h1 class="verborgen-h1">TheNorthFace</h1>
 		<nav>
 			<ul>
-				<li><a href="index.html">NL</a></li>
-				<li><a href="index.html">Bestelstatus</a></li>
-				<li><a href="index.html">Xplr Pass</a></li>
-				<li><a href="index.html">Vind een winkel</a></li>
-				<li><a href="index.html">Hulp</a></li>
-				<li><a href="index.html">Digitale Cadeaubonnen</a></li>
-				<li><a href="index.html">Favorieten</a></li>
-				<li><a href="index.html">Inloggen</a></li>
+				<li><a href="#">NL</a></li>
+				<li><a href="#">Bestelstatus</a></li>
+				<li><a href="#">XPLR Pass</a></li>
+				<li><a href="#">Vind een winkel</a></li>
+				<li><a href="#">Hulp</a></li>
+				<li><a href="#">Digitale Cadeaubonnen</a></li>
+				<li><a href="#">Favorieten</a></li>
+				<li><a href="#">Inloggen</a></li>
 			</ul>
 			<!--bovenste nav-->
-			<ul>
-				<li><a href="index.html"><img src="./images/The-North-Face-Logo-wit.png" alt="TheNorthFace-Logo in het wit"></a></li>
-				<li><a href="index.html">Heren</a></li>
-				<li><a href="index.html">Dames</a></li>
-				<li><a href="index.html">Kinderen</a></li>
-				<li><a href="index.html">Schoenen</a></li>
-				<li><a href="index.html">Tassen & Uitrusting</a></li>
-				<li><a href="index.html">Outlet</a></li>
-				<li><a href="index.html">Verken</a></li>
-				<!--navigatie om te shoppen-->
-				<li>
-					<form>
-						<label for="zoeken">
-							Zoeken
-							<input type="text" id="zoeken">
-						</label>
-					</form>
-					<!--de searchbar-->
-				</li>
-				<li><a href="index.html"><img src="./images/shopping-bag.png" alt="Winkelwagen icoon"></a></li>
-			</ul>
+			<section>
+				<ul>
+					<li><a href="#"><img src="./images/The-North-Face-Logo-wit.png" alt="TheNorthFace-Logo"></a></li>
+					<li><a href="#">Heren</a></li>
+					<li><a href="#">Dames</a></li>
+					<li><a href="#">Kinderen</a></li>
+					<li><a href="#">Schoenen</a></li>
+					<li><a href="#">Tassen & Uitrusting</a></li>
+					<li><a href="#">Outlet</a></li>
+					<li><a href="#">Verken</a></li>
+					<!--navigatie om te shoppen-->
+				</ul>
+				<ul>
+					<li>
+						<form>
+						<label>
+							<input type="search" name="search" placeholder="Zoeken">
+						</label></form>
+					</li>
+					<li><a href="#"><img src="./images/zoek-icon.svg" alt="zoek icoon"></a></li>
+					<li><a href="#"><img src="./images/shopping-bag.svg" alt="Winkelwagen icoon"></a></li>
+					<li><button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="hamburger_menu" /></button></li>
+				</ul>
+			</section>
 		</nav>
 	</header>
 	<main>
 		<section>
-			<h2>Black Friday-vroege toegang is begonnen: krijg 30% korting op elke bestelling</h2>
-			<a href="index.html">
-				<img src="./images/zwartwitberg.png" alt="een witte sneeuwende berg met een zwarte achtergrond">
-			</a>
-
-			<p>Alleen voor XPLR Pass-leden.</p>
-			<a href="index.html">Schrijf je in</a>
-			<a href="index.html">Meld je aan</a>
-
-		</section>
-		<!--black friday promotie-->
-		<section>
 			<h2>Geef exploratie cadeau</h2>
-			<a href="index.html">
-				<video width="320" height="240" controls>
-					<source src="./thenorthface/images/mainbannerfilmpje.webm" type="video/webm">
-					<source src="movie.ogg" type="video/ogg">
+			<a href="#">
+				<video autoplay loop>
+					<source src="./images/mainbannerfilmpjeklein.webm" type="video/webm">
 				  </video>
 			</a>
-			<!--Achtergrond img (moet nog gevonden worden)-->
-			<a href="index.html">Gids voor cadeaushoppen</a>
+			<a href="#">Gids voor cadeaushoppen</a>
 		</section>
 		<!--cadeau shoppen-->
 		<section>
 			<h2>Blijf warm en droog, van piste tot park.</h2>
-				<a href="index.html">
-					<img src="./images/skier.png" alt="skiënde man in berg die off-piste skied">
+				<a href="#">
+					<img src="./images/skierklein.png" alt="skiënde man in berg die off-piste skied">
 				</a>
-			<!--Achtergrond img (nog gevonden worden)-->
-			<a href="index.html">Shop heren</a>
-			<a href="index.html">Shop dames</a>
-
+			<div>
+				<a href="#">Shop heren</a>
+				<a href="#">Shop dames</a>
+				<a href="#">Shop kinderen</a>
+			</div>
 		</section>
 		<ul>
 			<li>
 				<h3>Start elke reis met een reistas.</h3>
-				<img src="./images/dufflebag.png" alt="duffle bag op een bankje met een stenen muur erachter">
-				<!--boven img (nog gevonden worden)-->
-				<a href="index.html">Shop nu</a>
+				<a href="#">
+				<img src="./images/dufflebag.png" alt="duffle bag op een bankje met een stenen muur erachter"></a>
+				<a href="#">Shop nu</a>
 			</li>
 			<li>
 				<h3>Heerlijk warm met geïsoleerde jassen.</h3>
-				<img src="./images/groepinjassenlopen.png" alt="een groep blije mensen met warme jassen aan ">
-				<!--boven img (nog gevonden worden)-->
-				<a href="index.html">Shop heren</a>
-				<a href="index.html">Shop dames</a>
+				<a href="#">
+				<img src="./images/groepinjassenlopen.png" alt="een groep blije mensen met warme jassen aan "></a>
+				<a href="#"><p>Shop heren</p></a>
+				<a href="#"><p>Shop dames</p></a>
 			</li>
 		</ul>
 		<ul>
 			<li>
-				
+				<a href="#">
 				<img src="./images/roodblauwtrui.png" alt="rood+blauw trui">
-				<!--boven img (nog gevonden worden)-->
-				<a href="index.html">Cadeaus voor hem</a>
-			
-		</li>
+				<p>Cadeaus voor hem</p></a>
+			</li>
 			<li>
+				<a href="#">
 				<img src="./images/rozebruintrui.png" alt="roze+bruin trui">
-				<!--boven img (nog gevonden worden)-->
-				<a href="index.html">Cadeaus voor haar</a>
+				<p>Cadeaus voor haar</p></a>
 			</li>
 			<li>
+				<a href="#">
 				<img src="./images/zwartroodjas.png" alt="rode kinder jas">
-				<!--boven img (nog gevonden worden)-->
-				<a href="index.html">Cadeaus voor kinderen</a>
+				<p>Cadeaus voor kinderen</p></a>
 			</li>
 			<li>
+				<a href="#">
 				<img src="./images/beigerugtas.png" alt="beige rugzak">
-				<!--boven img (nog gevonden worden)-->
-				<a href="index.html">Een leuk cadeau</a>
+				<p>Een leuk cadeau</p></a>
 			</li>
 		</ul>
 	</main>
@@ -130,16 +118,16 @@
 			<li>
 				<h4>Word lid van XPLR Pass</h4>
 				<p>Doe mee met ons lidmaatschapsprogramma.</p>
-				<a href="index.html">Word lid nu</a>
+				<a href="#">Word lid nu</a>
 			</li>
 		</ul>
 		<ul>
-			<li>WINKELEN</li>
-			<li>Heren</li>
-			<li>Dames</li>
-			<li>Kids</li>
-			<li>Tassen & Uitrusting</li>
-			<li>Schoenen</li>
+			<li><a href="#">WINKELEN</a></li>
+			<li><a href="#">Heren</a></li>
+			<li><a href="#">Dames</a></li>
+			<li><a href="#">Kids</a></li>
+			<li><a href="#">Tassen & Uitrusting</a></li>
+			<li><a href="#">Schoenen</a></li>
 		</ul>
 		<ul>
 			<li><a href="#">BESTELLINGEN</a></li>
@@ -182,31 +170,31 @@
 					</form>
 					<label for="terms">
 						<input type="checkbox" id="terms" value="terms">
-						Ik bevestig dat ik het <a href="index.html">privacybeleid</a> heb gelezen en begrepen en ik geef
+						Ik bevestig dat ik het <a href="#">privacybeleid</a> heb gelezen en begrepen en ik geef
 						toestemming voor de verwerking van mijn persoonlijke gegevens voor marketing- en
 						profileringsdoeleinden.*
 					</label>
-					<a href="index.html">Schrijf Je In</a>
+					<a href="#">Schrijf Je In</a>
 				</section>
 			</li>
 			<li>
 				<section>
 					<h4>Vind een winkel</h4>
 					<p>Vind een The North Face-winkel in de buurt</p>
-					<a href="index.html">Zoek winkel</a>
+					<a href="#">Zoek winkel</a>
 				</section>
 			</li>
 			<li>
 				<section>
 					<h4>Volg The North Face</h4>
 					<ul>
-						<li><a href="https://www.facebook.com/thenorthface/"><img src="./images/facebook-icon.png"
+						<li><a href="https://www.facebook.com/thenorthface/"><img src="./images/facebook-icon.svg"
 									alt="Winkelwagen"></a></li>
-						<li><a href="https://www.instagram.com/thenorthface/"><img src="./images/instagram-icon.png"
+						<li><a href="https://www.instagram.com/thenorthface/"><img src="./images/instagram-icon.svg"
 									alt="Winkelwagen"></a></li>
-						<li><a href="https://x.com/TheNorthFace?mx=2"><img src="./images/twitter-icon.png"
+						<li><a href="https://x.com/TheNorthFace?mx=2"><img src="./images/twitter-icon.svg"
 									alt="Winkelwagen"></a></li>
-						<li><a href="https://www.youtube.com/c/TheNorthFace"><img src="./images/youtube-icon.png"
+						<li><a href="https://www.youtube.com/c/TheNorthFace"><img src="./images/youtube-icon.svg"
 									alt="Winkelwagen"></a></li>
 					</ul>
 				</section>

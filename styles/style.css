@@ -5,53 +5,202 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+    font-family: 'helvetica';
+    src: url('./fonts/HelveticaNeue-Regular.1.woff2') format('woff2');
+}
 
-
-
+body{
+	width: 100%;
+    font-family: 'helvetica';
+}
 
 :root{
 	--zwart:black;
 	--wit: white;
 	color-scheme: light dark;
 	overflow-x: hidden;
+	background-color: blanchedalmond;
+	margin: 0em;
 }
+.verborgen-h1 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
 
+/*-------------------------------------------^^ algemeen ^^--------------------------------------------------*/
+/*-------------------------------------------vv navigatie vv--------------------------------------------------*/
 
-
-
+header {
+	  width: 100%;
+	  top: 0;
+}
 
 
 ul{
 	list-style: none;
-	width: 100%;
-}
-header{
-	width: 100%;
-}
-h1{
-	visibility: hidden;
-}
-
-nav li a{
-	/*color: var(--wit);*/
-	color: var(--zwart);
 }
 
 nav ul:nth-of-type(1){
-	/*background-color: var(--zwart);*/
 	display: flex;
+	justify-content: end;
+	gap: 2em;
+	/*background-color: aquamarine;*/
+	position: sticky;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+	margin-right: 1em;
+	transform: translate(100%);
+
 
 }
-
-nav ul:nth-of-type(1) li a{
-	margin: 1em;
-}
-
-nav ul:nth-of-type(2){
-	/*background-color: var(--zwart);*/
+nav section{
 	display: flex;
-
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2em;
+	width: 100%;
+	background-color: aquamarine;
+	position: sticky;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+	margin-left: -8px;
+	transform: translate(100%);
 }
-nav ul:nth-of-type(2) li a 	img{
-	scale: 0.3;
+nav ul li a{	
+	color: var(--zwart);
+}
+nav section img{
+	width: 2em;
+	height: 2em;
+	top: 0em;
+}
+
+nav section ul{
+	display: flex;
+	gap: 1em;
+}
+
+/*-------------------------------------------^^ navigatie ^^--------------------------------------------------*/
+/*-------------------------------------------vv main vv--------------------------------------------------*/
+
+a img{
+	width:100%;
+}
+
+img{
+	margin-left: 0;
+}
+
+video{
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: var(--zwart)
+}
+
+main section:nth-of-type(1){
+	display: flex;
+	flex-direction: column;
+	order: -1;
+}
+ main section div a{
+	color: var(--zwart);
+	background-color: var(--wit);
+	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	border-radius: 1.5em;
+	transition: 0.3s;
+}
+main section div a:hover{
+	color: var(--wit);
+	background-color: var(--zwart);
+}
+
+main section a:nth-of-type(2){
+	color: var(--zwart);
+	background-color: var(--wit);
+	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	border-radius: 1.5em;
+	transition: 0.3s;
+}
+main section a:nth-of-type(2):hover{
+	color: var(--wit);
+	background-color: var(--zwart);
+}
+
+main ul{
+	display: flex;
+	gap: 2em;
+}
+main section h2{
+	position: absolute;
+	color: var(--wit);
+	font-size: 3.5em;
+}
+main section div{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+main ul li a p{
+	color: var(--zwart);
+	background-color: var(--wit);
+	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	border-radius: 1.5em;
+	transition: 0.3s;
+}
+/*-------------------------------------------^^ main ^^--------------------------------------------------*/
+/*-------------------------------------------vv responsive vv--------------------------------------------------*/
+
+@media (width > 48em){
+	main section a img{
+		content: url('/images/skier.png');
+	}
+	main section a video{
+		content: url('/images/mainbannerfilmpje.webm');
+	}
+	main section div{
+		display: flex;
+		gap: 2em;
+	}
+	main section div a{
+		position: absolute;
+
+	}
+}
+
+@media (width > 64em){
+	nav ul:nth-of-type(1){
+		transform: translate(0%);
+		position:static;
+	}
+	nav section{
+		transform: translate(0%);
+		position:static;
+	}
+}
+
+/*-------------------------------------------^^ responsive ^^--------------------------------------------------*/
+/*-------------------------------------------vv footer vv--------------------------------------------------*/
+
+footer img{
+	width: 1em;
+	height: 1em;
+	top: 0em;
 }

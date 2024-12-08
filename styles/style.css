@@ -20,7 +20,7 @@ body{
 	--wit: white;
 	color-scheme: light dark;
 	overflow-x: hidden;
-	background-color: blanchedalmond;
+	/*background-color: blanchedalmond;*/
 	margin: 0em;
 }
 .verborgen-h1 {
@@ -57,8 +57,7 @@ nav ul:nth-of-type(1){
   	top: 0;
   	bottom: 0;
 	margin-right: 1em;
-	transform: translate(100%);
-
+	visibility: hidden;
 
 }
 nav section{
@@ -74,7 +73,7 @@ nav section{
   	top: 0;
   	bottom: 0;
 	margin-left: -8px;
-	transform: translate(100%);
+	visibility: hidden;
 }
 nav ul li a{	
 	color: var(--zwart);
@@ -165,15 +164,24 @@ main ul li a p{
 	border-radius: 1.5em;
 	transition: 0.3s;
 }
+video:nth-child(2){
+	display: block;
+}
+video:nth-child(2){
+	display: none;
+}
 /*-------------------------------------------^^ main ^^--------------------------------------------------*/
 /*-------------------------------------------vv responsive vv--------------------------------------------------*/
 
 @media (width > 48em){
 	main section a img{
-		content: url('/images/skier.png');
+		content: url('../images/skier.png');
 	}
-	main section a video{
-		content: url('/images/mainbannerfilmpje.webm');
+	main section a video source:nth-child(1){
+		display: block;
+	}
+	main section a video source:nth-child(2){
+		display: ;
 	}
 	main section div{
 		display: flex;
@@ -187,11 +195,11 @@ main ul li a p{
 
 @media (width > 64em){
 	nav ul:nth-of-type(1){
-		transform: translate(0%);
 		position:static;
+		visibility: visible;
 	}
 	nav section{
-		transform: translate(0%);
+		visibility: visible;
 		position:static;
 	}
 }

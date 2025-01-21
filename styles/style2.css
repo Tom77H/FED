@@ -1,0 +1,263 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+@font-face {
+    font-family: 'helvetitom';
+    src: url('../fonts/HelveticaNeue-Regular.woff2') format('woff2');
+	font-weight: 400;
+}
+@font-face {
+    font-family: 'helvetitom';
+    src: url('../fonts/HelveticaNeue-Medium.woff2') format('woff2');
+	font-weight: 600;
+}
+@font-face {
+    font-family: 'helvetitom';
+    src: url('../fonts/HelveticaNeue-Light.woff2') format('woff2');
+	font-weight: 300;
+}
+body{
+	width: 100%;
+    font-family: 'helvetitom';
+}
+
+:root{
+	--zwart:black;
+	--wit: white;
+	--grijs: rgb(184 184 184);
+	--donkergrijs: #757575;
+	color-scheme: light dark;
+
+	--svg-fill:light-dark(red, green);
+	overflow-x: hidden;
+	/*background-color: blanchedalmond;*/
+	margin: 0em;
+}
+.verborgen-h1 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+
+/*-------------------------------------------^^ algemeen ^^--------------------------------------------------*/
+/*-------------------------------------------vv navigatie vv--------------------------------------------------*/
+
+header {
+	  width: 100%;
+	  top: 0;
+}
+
+
+ul{
+	list-style: none;
+}
+
+svg{
+	width: 2em;
+	height: 2em;
+	fill: var(--svg-fill);
+}
+
+nav ul:nth-of-type(1){
+	display: flex;
+	justify-content: end;
+	gap: 2em;
+	/*background-color: aquamarine;*/
+	position: sticky;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+	margin-right: 1em;
+	visibility: hidden;
+
+}
+nav section{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2em;
+	width: 100%;
+	/* background-color: var(--zwart); */
+	background-color: aqua;
+	position: sticky;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	bottom: 0;
+	margin-left: -8px;
+	visibility: hidden;
+}
+nav ul li a{	
+	color: var(--zwart);
+}
+nav section ul li a{	
+	color: var(--wit);
+}
+nav section img{
+	width: 2em;
+	height: 2em;
+	top: 0em;
+}
+
+nav section ul{
+	display: flex;
+	gap: 1em;
+}
+nav ul li:nth-child(1){
+	display: flex;
+	background-color: red;
+	flex-direction: row;
+}
+/*-------------------------------------------^^ navigatie ^^--------------------------------------------------*/
+/*-------------------------------------------vv main vv--------------------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: var(--zwart)
+}
+
+ main section a{
+	color: var(--wit);
+	background-color: var(--zwart);
+	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	border-radius: 1.5em;
+	transition: 0.3s;
+}
+main section a:hover{
+	color: var(--wit);
+	background-color: var(--donkergrijs);
+}
+main section{
+	display: flex;
+	flex-direction: column;
+}
+
+main ul{
+	display:flex;
+	flex-direction: row;
+	max-width: 100%;
+
+}
+/*-------------------------------------------^^ main ^^--------------------------------------------------*/
+/*-------------------------------------------vv responsive vv--------------------------------------------------*/
+
+@media (width > 48em){
+	main section a img{
+		content: url('../images/skier.png');
+	}
+	main section a video source:nth-child(1){
+		display: block;
+	}
+	/* main section a video source:nth-child(2){
+		display: ;
+	} */
+	main section div{
+		display: flex;
+		gap: 2em;
+	}
+	main section div a{
+		position: absolute;
+
+	}
+}
+
+@media (width > 64em){
+	nav ul:nth-of-type(1){
+		position:static;
+		visibility: visible;
+	}
+	nav section{
+		visibility: visible;
+		position:static;
+	}
+}
+
+/*-------------------------------------------^^ responsive ^^--------------------------------------------------*/
+/*-------------------------------------------vv footer vv--------------------------------------------------*/
+
+footer img{
+	width: 1em;
+	height: 1em;
+	top: 0em;
+}
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border-top: 1px solid var(--grijs); 
+	padding-top: 10px; 
+	margin-top: 20px; 
+	border-width: 100%;
+}
+footer ul{
+	width: 100%;
+}
+footer section{
+	display: flex;
+	border-top: 1px solid var(--grijs); 
+	padding-top: 10px; 
+	margin-top: 20px; 
+	border-width: 100%;
+	width: 100%;
+
+}
+footer ul li section{
+	display: flex;
+	flex-direction: column;
+	width: 30em;
+	align-items: center;
+}
+footer>ul:nth-child(1){
+	text-align: center;
+
+}
+footer>ul:nth-child(3){
+	display: flex;
+	flex-direction: row;
+
+	
+}
+footer>ul:nth-child(3) li{
+	border-left: 1px solid var(--grijs); 
+	padding-top: 10px; 
+	margin-top: 20px; 
+	border-width: 100%;
+}
+
+footer ul li:first-of-type a{ /*-----------------*/
+	color: var(--wit);
+	background-color: var(--zwart);
+
+	padding: 0.8em;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	border-radius: 1.5em;
+	transition: 0.3s;
+}
+
+footer ul li:first-of-type a:hover{
+	background-color: var(--donkergrijs);
+
+	padding: 0.8em;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	border-radius: 1.5em;
+}
+
+footer:nth-last-child(1) ul{
+	display: flex;
+	align-items: center;
+}

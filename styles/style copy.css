@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Hide button by default */
+}
+
+/* Default nav styles */
+nav {
+    background-color: #444;
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout by default */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Horizontal layout for list */
+}
+
+nav li {
+    border: none;
+    /* Remove border */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    button {
+        display: block;
+        /* Show button on mobile */
+    }
+
+    nav {
+        display: none;
+        /* Hide nav by default on mobile */
+        flex-direction: column;
+        /* Vertical layout for mobile */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    button {
+        display: none;
+        /* Hide button on larger screens */
+    }
+
+    nav {
+        display: flex;
+        /* Show nav on larger screens */
+        position: static;
+        /* Reset position */
+    }
+}

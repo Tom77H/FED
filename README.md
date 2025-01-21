@@ -64,6 +64,7 @@ https://www.thenorthface.nl/nl-nl
   - Links zijn niet "recognizable" als links (geen streepjes)(waarschijnlijk voor uiterlijk doelen gedaan)
   - Maakt geen gebruik van focus states
   - Geen dark of light mode
+  - Bepaalde tekst niet in juiste taal (Nederlands)
 </details>
 
 
